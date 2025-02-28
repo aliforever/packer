@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  packer:
+    container_name: packer
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      "LOG_LEVEL": "-4"
+      "HTTP_ADDRESS": "0.0.0.0:8080"
+      "SEED_DEFAULT": "true"
