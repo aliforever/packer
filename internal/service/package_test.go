@@ -3,7 +3,7 @@ package service
 import (
 	"testing"
 
-	"packer/services/packer/models"
+	"packer/internal/models"
 )
 
 func TestDistribute(t *testing.T) {

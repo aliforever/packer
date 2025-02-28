@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"os"
 
-	"packer/services/packer/config"
-	"packer/services/packer/controller"
-	"packer/services/packer/repository"
-	"packer/services/packer/routes"
-	"packer/services/packer/service"
+	"packer/internal/config"
+	"packer/internal/controller"
+	"packer/internal/repository"
+	"packer/internal/routes"
+	"packer/internal/service"
 )
 
 func main() {

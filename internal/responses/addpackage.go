@@ -1,6 +1,8 @@
 package responses
 
-import "packer/services/packer/models"
+import (
+	"packer/internal/models"
+)
 
 type AddPackage struct {
 	Package *models.Package `json:"package,omitempty"`

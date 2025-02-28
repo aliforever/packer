@@ -4,9 +4,9 @@ import (
 	"math"
 	"sort"
 
-	"packer/services/packer/models"
-	"packer/services/packer/repository"
-	"packer/services/packer/requests"
+	"packer/internal/models"
+	"packer/internal/repository"
+	"packer/internal/requests"
 )
 
 type Package struct {

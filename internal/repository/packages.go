@@ -3,7 +3,7 @@ package repository
 import (
 	"sync"
 
-	"packer/services/packer/models"
+	"packer/internal/models"
 )
 
 type Packages interface {

@@ -3,7 +3,7 @@ package routes
 import (
 	"net/http"
 
-	"packer/services/packer/controller"
+	"packer/internal/controller"
 )
 
 func Init(mux *http.ServeMux, packageController *controller.Package) {
