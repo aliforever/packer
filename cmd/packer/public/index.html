@@ -42,7 +42,7 @@
             quantity: Number(document.getElementById('addQuantity').value)
         };
 
-        fetch('http://localhost:8080/packages/add', {
+        fetch('./packages/add', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -60,7 +60,7 @@
             id: document.getElementById('removeId').value
         };
 
-        fetch('http://localhost:8080/packages/remove', {
+        fetch('./packages/remove', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -74,7 +74,7 @@
     }
 
     function getPackages() {
-        fetch('http://localhost:8080/packages')
+        fetch('./packages')
             .then(response => response.json())
             .then(data => {
                 const ul = document.getElementById('packageList');
@@ -92,7 +92,7 @@
             quantity: Number(document.getElementById('orderQuantity').value)
         };
 
-        fetch('http://localhost:8080/packages/order', {
+        fetch('./packages/order', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
